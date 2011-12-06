@@ -5,7 +5,7 @@ package declarations.interfaces;
  * Date: 11/29/11
  * Time: 11:30 AM
  */
-public abstract class A
+public abstract class A implements Check
 {
-	abstract void foo();
+	abstract void foo(); // only public
 }
