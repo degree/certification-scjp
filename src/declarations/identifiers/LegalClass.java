@@ -9,8 +9,6 @@ public class LegalClass
 {
 	private int contentWidth;
 	private boolean visible;
-//	private String можноПисатьПоРусски;
-	private int \u0420;
 
 	public int getContentWidth()
 	{

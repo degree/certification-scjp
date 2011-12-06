@@ -8,6 +8,7 @@ package declarations.identifiers;
 public class FuckMyBrain
 {
 	private int \u0420;
+	private String можноПисатьПоРусски;
 
 	public int get\u0420()
 	{
@@ -19,10 +20,25 @@ public class FuckMyBrain
 		this.\u0420 = \u0420;
 	}
 
+	public String getМожноПисатьПоРусски()
+	{
+		return можноПисатьПоРусски;
+	}
+
+	public void setМожноПисатьПоРусски(String можноПисатьПоРусски)
+	{
+		this.можноПисатьПоРусски = можноПисатьПоРусски;
+	}
+
 	public static void main(String[] args)
 	{
 		FuckMyBrain fuckMyBrain = new FuckMyBrain();
+
 		fuckMyBrain.set\u0420(42);
 		System.out.println(fuckMyBrain.get\u0420());
+
+		fuckMyBrain.setМожноПисатьПоРусски("fourty two");
+		System.out.println(fuckMyBrain.getМожноПисатьПоРусски());
+
 	}
 }
