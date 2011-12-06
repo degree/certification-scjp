@@ -7,5 +7,5 @@ package declarations.interfaces;
  */
 abstract interface Check
 {
-	/*public*/ void baz();
+	public abstract void baz();
 }

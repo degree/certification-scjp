@@ -8,4 +8,6 @@ package declarations.interfaces;
 public abstract class A implements Check
 {
 	abstract void foo(); // only public
+
+	protected abstract void bar();
 }

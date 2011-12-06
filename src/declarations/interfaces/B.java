@@ -13,6 +13,11 @@ public class B extends A
 		System.out.println("BANG!");
 	}
 
+	@Override
+	public void bar()
+	{
+	}
+
 	public void baz()
 	{
 

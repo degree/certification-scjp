@@ -7,32 +7,19 @@ package declarations.identifiers;
  */
 public class LegalClass
 {
-	private int contentWidth;
 	private boolean visible;
 
+	// contentWidth
 	public int getContentWidth()
 	{
-		return contentWidth;
+		return 42;
 	}
 
 	public void setContentWidth(int contentWidth)
 	{
-		this.contentWidth = contentWidth;
+//		this.contentWidth = contentWidth;
 	}
 
-/*
-	public String getМожноПисатьПоРусски()
-	{
-		return можноПисатьПоРусски;
-	}
-*/
-
-/*
-	public void setМожноПисатьПоРусски(String можноПисатьПоРусски)
-	{
-		this.можноПисатьПоРусски = можноПисатьПоРусски;
-	}
-*/
 
 	public boolean isVisible()
 	{
@@ -48,4 +35,17 @@ public class LegalClass
 	{
 		this.visible = visible;
 	}
+
+	public void addMySuperEventListener(MySuperEvent event)
+	{
+
+	}
+
+	public void removeMySuperEventListener(MySuperEvent event)
+	{
+
+	}
+
+	private class MySuperEvent
+	{}
 }
