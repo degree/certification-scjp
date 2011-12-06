@@ -31,4 +31,9 @@ public class B extends A
 	{
 		super.fooPublic();
 	}
+
+	public static void myFoo()
+	{
+		// do nothing
+	}
 }
