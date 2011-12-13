@@ -16,4 +16,19 @@ public interface DefaultsForInterface
 	public abstract void noo();
 
 	void yep();
+
+	public class InternalClass
+	{
+		public int answer;
+
+		public InternalClass(int answer)
+		{
+			this.answer = answer;
+		}
+
+		public int getAnswer()
+		{
+			return answer;
+		}
+	}
 }

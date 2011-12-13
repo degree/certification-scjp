@@ -5,7 +5,9 @@ package declarations.interfaces;
  * Date: 12/6/11
  * Time: 11:06 AM
  */
-abstract interface Check
+public abstract interface Check
 {
+	public final static String CONST = "CONST";
+
 	public abstract void baz();
 }
