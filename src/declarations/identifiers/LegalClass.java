@@ -5,6 +5,8 @@ package declarations.identifiers;
  * Date: 12/6/11
  * Time: 11:09 AM
  */
+public class LegalClass {}
+
 class LegalClassDiffersFromFilename
 {
 	private boolean visible;
@@ -36,16 +38,16 @@ class LegalClassDiffersFromFilename
 		this.visible = visible;
 	}
 
-	public void addMySuperListener(MySuperListener listener)
+	public void addMouseClickListener(MouseClickListener abrakadabra)
 	{
 
 	}
 
-	public void removeMySuperListener(MySuperListener listener)
+	public void removeMouseClickListener(MouseClickListener anyName)
 	{
 
 	}
 
-	private class MySuperListener
+	private class MouseClickListener
 	{}
 }
