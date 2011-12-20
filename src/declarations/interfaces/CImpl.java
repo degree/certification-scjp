@@ -11,6 +11,9 @@ public abstract class CImpl extends C
 	{
 //		declarations.interfaces.C is abstract; cannot be instantiated
 //		C c = new C();
-		System.out.println("boo");
+		System.out.println(Check.CONST);
+		System.out.println(CONST);
+
+
 	}
 }

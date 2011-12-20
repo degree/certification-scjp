@@ -7,6 +7,8 @@ package declarations.interfaces;
  */
 public abstract class C extends B
 {
+//	public final static String CONST = "CONST_OVERRIDDEN";
+
 	@Override
 	abstract void foo();
 
