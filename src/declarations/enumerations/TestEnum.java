@@ -24,12 +24,13 @@ public enum TestEnum
 	{
 		this.id = id;
 		this.name = name;
-//		System.out.println(TestEnum.x);
+		main(name());
 	}
 
 	TestEnum(String name)
 	{
 		this.name = name;
+		main(name());
 	}
 
 	public int getId()
@@ -44,6 +45,7 @@ public enum TestEnum
 
 	private TestEnum()
 	{
+		main(name());
 	}
 
 	static int getStatic()
@@ -51,8 +53,8 @@ public enum TestEnum
 		return 42;
 	}
 
-	public static void main(String[] args)
+	public static void main(String... args)
 	{
-		System.out.println("main");
+		if (args.length > 0) System.out.println("main: " + args[0]);
 	}
 }
