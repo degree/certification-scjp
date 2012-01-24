@@ -8,6 +8,13 @@ package declarations.constructors;
 public class ParentImpl extends Parent
 {
 	private int y = 1;
+	
+	protected int test = 4444;
+
+	public void test()
+	{
+		System.out.println(test);
+	}
 
 	{
 		System.out.println(ParentImpl.class.getName() + " block " + y);
@@ -20,6 +27,8 @@ public class ParentImpl extends Parent
 		// 'this' is already available
 		System.out.println(ParentImpl.class.getName() + " " + y);
 		y = 2;
+		System.out.println(super.test);
+		System.out.println(test);
 	}
 
 

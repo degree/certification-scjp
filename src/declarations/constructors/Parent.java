@@ -8,6 +8,7 @@ package declarations.constructors;
 public class Parent
 {
 	private int x;
+	protected int test = 42;
 
 	{
 		System.out.println(Parent.class.getName() + " block");
@@ -18,6 +19,7 @@ public class Parent
 		System.out.println(Parent.class.getName() + " pre " + x);
 		this.x = _x;
 		System.out.println(Parent.class.getName() + " pre " + x);
+		System.out.println(Parent.class.getName() + " test " + test);
 //		throw new RuntimeException("Mauh-ha-ha!");
 	}
 
