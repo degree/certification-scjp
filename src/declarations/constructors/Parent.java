@@ -9,9 +9,16 @@ public class Parent
 {
 	private int x;
 
-	protected Parent(int x)
 	{
-		this.x = x;
+		System.out.println(Parent.class.getName() + " block");
+	}
+
+	protected Parent(int _x)
+	{
+		System.out.println(Parent.class.getName() + " pre " + x);
+		this.x = _x;
+		System.out.println(Parent.class.getName() + " pre " + x);
+//		throw new RuntimeException("Mauh-ha-ha!");
 	}
 
 	protected int getX()

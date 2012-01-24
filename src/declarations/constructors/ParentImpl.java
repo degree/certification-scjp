@@ -7,13 +7,31 @@ package declarations.constructors;
  */
 public class ParentImpl extends Parent
 {
+	private int y = 1;
+
+	{
+		System.out.println(ParentImpl.class.getName() + " block " + y);
+	}
+
 	private ParentImpl()
 	{
+		// 'this' is not available
 		super(42);
+		// 'this' is already available
+		System.out.println(ParentImpl.class.getName() + " " + y);
+		y = 2;
+	}
+
+
+	public int getY()
+	{
+		return y;
 	}
 
 	public static void main(String... args)
 	{
-		System.out.println(new ParentImpl().getX());
+		ParentImpl parent = new ParentImpl();
+		System.out.println("main: " + parent.getX());
+		System.out.println("main: " + parent.getY());
 	}
 }
