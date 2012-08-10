@@ -16,6 +16,6 @@ public class ScanApp {
 			}
 		}
 
-		System.out.format("%n%n%0$+020.10f%%", Math.PI);
+		System.out.format("%ndefault: %f%nformatted: %1$+020.10f%%%nprevious: %<+5.4f", Math.PI);
 	}
 }
