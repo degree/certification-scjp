@@ -26,5 +26,7 @@ public class A {
 		System.out.println(a.test(new Integer(1)));
 		System.out.println(a.test(1L));
 		System.out.println(a.test(new Long(1L)));
+		System.out.println(new Long(1L) == new Long(1L));
+		System.out.println(new Long(1L).equals(new Long(1L)));
 	}
 }
