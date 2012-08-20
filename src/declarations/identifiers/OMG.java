@@ -6,7 +6,7 @@ package declarations.identifiers;
  * Time: 11:09 AM
  */
 @SuppressWarnings("ConstantConditions")
-public class FuckMyBrain
+public class OMG
 {
 	private int \u0420;
 	private String можноПисатьПоРусски;
@@ -33,13 +33,13 @@ public class FuckMyBrain
 
 	public static void main(String[] args)
 	{
-		FuckMyBrain fuckMyBrain = new FuckMyBrain();
+		OMG omg = new OMG();
 
-		fuckMyBrain.set\u0420(42);
-		System.out.println(fuckMyBrain.get\u0420());
+		omg.set\u0420(42);
+		System.out.println(omg.get\u0420());
 
-		fuckMyBrain.setМожноПисатьПоРусски("fourty two");
-		System.out.println(fuckMyBrain.getМожноПисатьПоРусски());
+		omg.setМожноПисатьПоРусски("fourty two");
+		System.out.println(omg.getМожноПисатьПоРусски());
 
 		// conditional operator
 		boolean a, b, c, d, e, f, g, h, i, j, k, l;
@@ -57,6 +57,5 @@ public class FuckMyBrain
 		l = true;
 		a = b ? c ? d : e ? f : g : h ? i : j ? k : l;
 		a = (/*1>*/b ? (/*2>*/c ? d : (/*3>*/e ? f : g/*<3*/)/*<2*/) : (/*4>*/h ? i : (/*5>*/j ? k : l/*<5*/)/*<4*/)/*<1*/);
-
 	}
 }
