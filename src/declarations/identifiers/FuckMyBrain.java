@@ -5,6 +5,7 @@ package declarations.identifiers;
  * Date: 12/6/11
  * Time: 11:09 AM
  */
+@SuppressWarnings("ConstantConditions")
 public class FuckMyBrain
 {
 	private int \u0420;
