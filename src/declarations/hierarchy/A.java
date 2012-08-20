@@ -3,6 +3,7 @@ package declarations.hierarchy;
 /**
  * @author Yauhen Dubrouka
  */
+@SuppressWarnings("UnusedParameters")
 public class A {
 	protected int test(int a) throws IllegalArgumentException {
 		return 1;
@@ -26,7 +27,9 @@ public class A {
 		System.out.println(a.test(new Integer(1)));
 		System.out.println(a.test(1L));
 		System.out.println(a.test(new Long(1L)));
-		System.out.println(new Long(1L) == new Long(1L));
-		System.out.println(new Long(1L).equals(new Long(1L)));
+
+		//noinspection UnnecessaryBoxing,NumberEquality
+		System.out.println(new Long(1L) == new Long(1L)); // false
+		System.out.println(new Long(1L).equals(new Long(1L))); // true
 	}
 }
