@@ -10,5 +10,6 @@ public class AccessA
 	void foo(A a)
 	{
 		System.out.println(a.inADefault);
+		System.out.println(a.inAProtected);
 	}
 }
