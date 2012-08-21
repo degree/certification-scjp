@@ -3,6 +3,7 @@ package declarations.constructors;
 /**
  * @author Yauhen Dubrouka
  */
+@SuppressWarnings("ClassInitializerMayBeStatic")
 public class FloatingChild extends Floating {
 
 	{
