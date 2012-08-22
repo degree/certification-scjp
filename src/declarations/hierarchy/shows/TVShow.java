@@ -7,10 +7,16 @@ import declarations.hierarchy.people.Reporter;
  * @author Yauhen Dubrouka
  */
 public class TVShow {
+
+	public static final String TOPIC = "hot news";
+
 	public static void main(String[] args) {
 		final NewsAgency agency = new NewsAgency();
+
 		final Reporter reporter = agency.getReporter();
-		final String report = reporter.report("hot news");
-		System.out.println(report);
+		final Reporter specialReporter = agency.specialCorrespondent();
+
+		System.out.println(reporter.report("hot news"));
+		System.out.println(specialReporter.toString() + ": " + specialReporter.report(TOPIC));
 	}
 }

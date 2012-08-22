@@ -10,6 +10,20 @@ public class NewsAgency {
 		return new ReporterImpl();
 	}
 
+	public Reporter specialCorrespondent() {
+		return new Reporter() {
+			@Override
+			public String report(String topic) {
+				return "breaking news '" + topic + "': info";
+			}
+
+			@Override
+			public String toString() {
+				return "Special correspondent";
+			}
+		};
+	}
+
 	protected class ReporterImpl implements Reporter {
 		@Override
 		public String report(String topic) {
