@@ -24,6 +24,22 @@ public class NewsAgency {
 		};
 	}
 
+	public Reporter anonymous() {
+		class AnonymousReporter implements Reporter {
+			@Override
+			public String report(String topic) {
+				return toString() + " " + topic + ": smth happened";
+			}
+
+			@Override
+			public String toString() {
+				return "anonymous";
+			}
+		}
+
+		return new AnonymousReporter();
+	}
+
 	protected class ReporterImpl implements Reporter {
 		@Override
 		public String report(String topic) {

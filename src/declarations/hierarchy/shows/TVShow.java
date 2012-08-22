@@ -15,8 +15,10 @@ public class TVShow {
 
 		final Reporter reporter = agency.getReporter();
 		final Reporter specialReporter = agency.specialCorrespondent();
+		final Reporter anonymous = agency.anonymous();
 
-		System.out.println(reporter.report("hot news"));
+		System.out.println(reporter.report(TOPIC));
 		System.out.println(specialReporter.toString() + ": " + specialReporter.report(TOPIC));
+		System.out.println(anonymous.report(TOPIC));
 	}
 }
