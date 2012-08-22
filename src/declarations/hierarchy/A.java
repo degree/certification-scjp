@@ -17,8 +17,13 @@ public class A {
 		return 3;
 	}
 
-	protected String test(Long a) throws IllegalArgumentException {
-		return String.valueOf(4).concat("-str");
+	protected A test(Long a) throws IllegalArgumentException {
+		return new A();
+	}
+
+	@Override
+	public String toString() {
+		return "A";
 	}
 
 	public static void main(String[] args) {
