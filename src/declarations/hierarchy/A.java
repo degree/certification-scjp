@@ -17,8 +17,8 @@ public class A {
 		return 3;
 	}
 
-	protected int test(Long a) throws IllegalArgumentException {
-		return 4;
+	protected String test(Long a) throws IllegalArgumentException {
+		return String.valueOf(4).concat("-str");
 	}
 
 	public static void main(String[] args) {
