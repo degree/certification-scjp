@@ -26,8 +26,17 @@ public class A {
 		return "A";
 	}
 
+	public class InnerA {
+		private int i = 0;
+
+		public int getI() {
+			return i;
+		}
+	}
+
 	public static void main(String[] args) {
 		final A a = new A();
+		final InnerA innerA = a.new InnerA();
 		System.out.println(a.test(1));
 		System.out.println(a.test(new Integer(1)));
 		System.out.println(a.test(1L));
