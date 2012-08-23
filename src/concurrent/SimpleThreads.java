@@ -1,8 +1,6 @@
 package concurrent;
 
-
 public class SimpleThreads {
-
 	// Display a message, preceded by
 	// the name of the current thread
 	static void threadMessage(String message) {
@@ -62,8 +60,7 @@ public class SimpleThreads {
 			// for MessageLoop thread
 			// to finish.
 			t.join(1000);
-			if (((System.currentTimeMillis() - startTime) > patience)
-					&& t.isAlive()) {
+			if (((System.currentTimeMillis() - startTime) > patience) && t.isAlive()) {
 				threadMessage("Tired of waiting!");
 				t.interrupt();
 				// Shouldn't be long now
